@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxFrame" name="frame">
+        <style>wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX</style>
+        <size>850,550</size>
+        <title>wxFrame frame</title>
+        <centered>1</centered>
+        <object class="wxPanel" name="panel">
+            <style>wxSTATIC_BORDER|wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <option>1</option>
+                    <object class="wxFlexGridSizer">
+                        <cols>2</cols>
+                        <rows>0</rows>
+                        <vgap>0</vgap>
+                        <hgap>0</hgap>
+                        <growablecols>1</growablecols>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Codice:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="id" subclass="myxrc.UpperTextCtrl">
+                                <size>50,-1</size>
+                                <enabled>0</enabled>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Descrizione pagamento:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxGROW|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="postpag" subclass="myxrc.TextCtrl">
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Gennaio:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m01" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Febbraio:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m02" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Marzo:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m03" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Aprile:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m04" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Maggio:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m05" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Giugno:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m06" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Luglio:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m07" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Agosto:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m08" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Settembre</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m09" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Ottobre:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m10" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Novembre:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m11" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Dicembre:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="m12" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>2</maxlength>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

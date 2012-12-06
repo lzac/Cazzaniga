@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxFrame" name="frame">
+        <style>wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxMINIMIZE_BOX|wxMAXIMIZE_BOX|wxCLOSE_BOX</style>
+        <size>350,250</size>
+        <title>Creazione guidata rate</title>
+        <centered>1</centered>
+        <object class="wxPanel" name="panel">
+            <style>wxSTATIC_BORDER|wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <option>1</option>
+                    <object class="wxFlexGridSizer">
+                        <cols>2</cols>
+                        <rows>0</rows>
+                        <vgap>0</vgap>
+                        <hgap>0</hgap>
+                        <growablecols>1</growablecols>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Numero rate:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <option>1</option>
+                            <object class="wxTextCtrl" name="numrate" subclass="myxrc.IntegerTextCtrl">
+                                <size>50,-1</size>
+                                <maxlength>3</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Tipo pagamento:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxChoice" name="idtipopag" subclass="myxrc.Choice">
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Giorni prima rata:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="prima_frequenza" subclass="myxrc.IntegerTextCtrl">
+                                        <size>50,-1</size>
+                                        <maxlength>10</maxlength>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxStaticText" name="wxID_STATIC">
+                                        <label>Giorni rate successive:</label>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="frequenza_successiva" subclass="myxrc.IntegerTextCtrl">
+                                        <size>50,-1</size>
+                                        <maxlength>10</maxlength>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Tipo scadenza</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxChoice" name="idtiposcadenza" subclass="myxrc.Choice">
+                            </object>
+                        </object>
+                    </object>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_RIGHT|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxBoxSizer">
+                        <orient>wxHORIZONTAL</orient>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxButton" name="cmd_conferma">
+                                <label>OK</label>
+                                <default>1</default>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxButton" name="cmd_annulla">
+                                <label>Annulla</label>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

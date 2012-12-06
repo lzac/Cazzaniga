@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxFrame" name="frame">
+        <style>wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX</style>
+        <size>950,690</size>
+        <title>wxFrame frame</title>
+        <centered>1</centered>
+        <object class="wxPanel" name="ID_PANEL">
+            <style>wxSTATIC_BORDER|wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxFlexGridSizer">
+                        <cols>5</cols>
+                        <rows>5</rows>
+                        <vgap>0</vgap>
+                        <hgap>0</hgap>
+                        <growablecols>1</growablecols>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Ragione sociale:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="anag" subclass="myxrc.UpperTextCtrl">
+                                <maxlength>200</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Numero:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="id" subclass="myxrc.TextCtrl">
+                                <size>50,-1</size>
+                                <style>wxTE_READONLY</style>
+                                <enabled>0</enabled>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <option>1</option>
+                    <object class="wxNotebook" name="ID_NOTEBOOK">
+                        <style>wxNB_FIXEDWIDTH|wxBK_TOP</style>
+                        <object class="notebookpage">
+                            <label>Anagrafica</label>
+                            <object class="wxPanel" name="pnl_anagrafica">
+                                <style>wxTAB_TRAVERSAL</style>
+                                <object class="wxBoxSizer">
+                                    <orient>wxVERTICAL</orient>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL</flag>
+                                        <border>5</border>
+                                        <option>4</option>
+                                        <object class="wxFlexGridSizer">
+                                            <cols>2</cols>
+                                            <rows>0</rows>
+                                            <vgap>0</vgap>
+                                            <hgap>0</hgap>
+                                            <growablecols>1</growablecols>
+                                            <growablerows>4, 5</growablerows>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>Partita IVA:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>0</border>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <object class="wxTextCtrl" name="partitaiva" subclass="myxrc.TextCtrl">
+                                                            <maxlength>13</maxlength>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <option>1</option>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxHORIZONTAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>0</border>
+                                                                <object class="wxBitmapButton" name="btn_verifica_partitaiva">
+                                                                    <tooltip>Verifica partita iva</tooltip>
+                                                                    <style>wxBU_AUTODRAW</style>
+                                                                    <bitmap>verifica.png</bitmap>
+                                                                </object>
+                                                            </object>
+                                                            <object class="spacer">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>5</border>
+                                                                <option>1</option>
+                                                                <size>5,5</size>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>0</border>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_TOP|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                                        <border>5</border>
+                                                        <object class="wxButton" name="btn_idtipoanag" subclass="myxrc.FrameButton">
+                                                            <size>100,-1</size>
+                                                            <style>wxBU_LEFT</style>
+                                                            <label>Tipo anagrafica...</label>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxBitmapButton" name="lkp_idtipoanag" subclass="myxrc.LookupButton">
+                                                            <style>wxBU_AUTODRAW</style>
+                                                            <bitmap>find.xpm</bitmap>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxChoice" name="idtipoanag" subclass="myxrc.Choice">
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="lbl_codicefiscale">
+                                                    <label>Codice fiscale:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>0</border>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <object class="wxTextCtrl" name="codicefiscale" subclass="myxrc.TextCtrl">
+                                                            <maxlength>16</maxlength>
+                                                        </object>
+                                                    </object>
+                                                    <object class="spacer">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <size>5,5</size>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="ID_STATICTEXT">
+                                                    <label>Codice ministeriale:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>0</border>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <object class="wxTextCtrl" name="codiceministeriale" subclass="myxrc.TextCtrl">
+                                                            <maxlength>25</maxlength>
+                                                        </object>
+                                                    </object>
+                                                    <object class="spacer">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <size>5,5</size>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_TOP|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxButton" name="btn_indirizzo">
+                                                    <size>123,-1</size>
+                                                    <style>wxBU_LEFT</style>
+                                                    <label>Recapito...</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxGROW|wxALL</flag>
+                                                <border>5</border>
+                                                <option>1</option>
+                                                <object class="wxTextCtrl" name="recapito" subclass="myxrc.TextCtrl">
+                                                    <style>wxTE_MULTILINE</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_LEFT|wxALIGN_TOP|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="ID_STATICTEXT1">
+                                                    <label>Note</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="note" subclass="myxrc.TextCtrl">
+                                                    <style>wxTE_MULTILINE</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>0</border>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_TOP|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                                        <border>5</border>
+                                                        <object class="wxButton" name="btn_idnazione" subclass="myxrc.FrameButton">
+                                                            <size>100,-1</size>
+                                                            <style>wxBU_LEFT</style>
+                                                            <label> Nazione...</label>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxBitmapButton" name="lkp_idnazione" subclass="myxrc.LookupButton">
+                                                            <style>wxBU_AUTODRAW</style>
+                                                            <bitmap>find.xpm</bitmap>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>0</border>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                                        <border>5</border>
+                                                        <object class="wxTextCtrl" name="idnazione" subclass="myxrc.LookupTextCtrl">
+                                                            <size>50,-1</size>
+                                                            <style>wxTE_PROCESS_ENTER</style>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxBOTTOM</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <object class="wxTextCtrl" name="nazione" subclass="myxrc.TextCtrl">
+                                                            <enabled>0</enabled>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="lbl_telefono">
+                                                    <label>Telefono:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="telefono" subclass="myxrc.TextCtrl">
+                                                    <maxlength>200</maxlength>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="lbl_cellulare">
+                                                    <label>Cellulare:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="cellulare" subclass="myxrc.TextCtrl">
+                                                    <maxlength>200</maxlength>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="lbl_fax">
+                                                    <label>Fax:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="fax" subclass="myxrc.TextCtrl">
+                                                    <maxlength>200</maxlength>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="lbl_email">
+                                                    <label>Email:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="email" subclass="myxrc.TextCtrl">
+                                                    <maxlength>200</maxlength>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="lbl_sitoweb">
+                                                    <label>Sito web:</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="sitoweb" subclass="myxrc.TextCtrl">
+                                                    <maxlength>200</maxlength>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                    <object class="spacer">
+                                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                                        <border>5</border>
+                                        <size>5,0</size>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="notebookpage">
+                            <label>Gestione</label>
+                            <object class="wxPanel" name="pnl_gestione">
+                                <style>wxTAB_TRAVERSAL</style>
+                                <object class="wxBoxSizer">
+                                    <orient>wxVERTICAL</orient>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL</flag>
+                                        <border>5</border>
+                                        <object class="wxStaticBoxSizer" name="wxID_ANY">
+                                            <orient>wxVERTICAL</orient>
+                                            <label>Condizioni di incasso</label>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxFlexGridSizer">
+                                                    <cols>2</cols>
+                                                    <rows>0</rows>
+                                                    <vgap>0</vgap>
+                                                    <hgap>0</hgap>
+                                                    <growablecols>1</growablecols>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxHORIZONTAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                                                <border>5</border>
+                                                                <object class="wxButton" name="btn_idmodopag" subclass="myxrc.FrameButton">
+                                                                    <size>100,-1</size>
+                                                                    <style>wxBU_LEFT</style>
+                                                                    <label>Pagamento...</label>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>0</border>
+                                                                <object class="wxBitmapButton" name="lkp_idmodopag" subclass="myxrc.LookupButton">
+                                                                    <style>wxBU_AUTODRAW</style>
+                                                                    <bitmap>find.xpm</bitmap>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxHORIZONTAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>5</border>
+                                                                <option>1</option>
+                                                                <object class="wxChoice" name="idmodopag" subclass="myxrc.Choice">
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxHORIZONTAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                                                <border>5</border>
+                                                                <object class="wxButton" name="btn_idpostpag" subclass="myxrc.FrameButton">
+                                                                    <size>100,-1</size>
+                                                                    <style>wxBU_LEFT</style>
+                                                                    <label>Posticipo rate...</label>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>0</border>
+                                                                <object class="wxBitmapButton" name="lkp_idpostpag" subclass="myxrc.LookupButton">
+                                                                    <style>wxBU_AUTODRAW</style>
+                                                                    <bitmap>find.xpm</bitmap>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxHORIZONTAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>5</border>
+                                                                <option>1</option>
+                                                                <object class="wxChoice" name="idpostpag" subclass="myxrc.Choice">
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL</flag>
+                                        <border>5</border>
+                                        <object class="wxStaticBoxSizer" name="wxID_ANY">
+                                            <orient>wxVERTICAL</orient>
+                                            <label>Coordinate bancarie</label>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxFlexGridSizer">
+                                                    <cols>2</cols>
+                                                    <rows>0</rows>
+                                                    <vgap>0</vgap>
+                                                    <hgap>0</hgap>
+                                                    <growablecols>1</growablecols>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxStaticText" name="wxID_STATIC">
+                                                            <label>Descrizione banca:</label>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxTextCtrl" name="descrizionebanca" subclass="myxrc.TextCtrl">
+                                                            <maxlength>200</maxlength>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxStaticText" name="wxID_STATIC">
+                                                            <label>Contocorrente:</label>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxHORIZONTAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>0</border>
+                                                                <option>1</option>
+                                                                <object class="wxBoxSizer">
+                                                                    <orient>wxHORIZONTAL</orient>
+                                                                    <object class="sizeritem">
+                                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                        <border>5</border>
+                                                                        <object class="wxTextCtrl" name="contoc" subclass="myxrc.TextCtrl">
+                                                                            <maxlength>12</maxlength>
+                                                                        </object>
+                                                                    </object>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxStaticText" name="wxID_STATIC">
+                                                            <label>Iban:</label>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <option>1</option>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxHORIZONTAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                <border>0</border>
+                                                                <option>1</option>
+                                                                <object class="wxBoxSizer">
+                                                                    <orient>wxHORIZONTAL</orient>
+                                                                    <object class="sizeritem">
+                                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                        <border>5</border>
+                                                                        <option>1</option>
+                                                                        <object class="wxTextCtrl" name="iban" subclass="myxrc.UpperTextCtrl">
+                                                                            <maxlength>27</maxlength>
+                                                                        </object>
+                                                                    </object>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL</flag>
+                                        <border>5</border>
+                                        <object class="wxStaticBoxSizer" name="wxID_ANY">
+                                            <orient>wxHORIZONTAL</orient>
+                                            <label></label>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>0</border>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                                        <border>5</border>
+                                                        <object class="wxButton" name="btn_idiva" subclass="myxrc.FrameButton">
+                                                            <size>100,-1</size>
+                                                            <style>wxBU_LEFT</style>
+                                                            <label> Codice iva...</label>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                        <border>0</border>
+                                                        <object class="wxBitmapButton" name="lkp_idiva" subclass="myxrc.LookupButton">
+                                                            <style>wxBU_AUTODRAW</style>
+                                                            <bitmap>find.xpm</bitmap>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="idiva" subclass="myxrc.LookupTextCtrl">
+                                                    <style>wxTE_PROCESS_ENTER</style>
+                                                    <maxlength>2</maxlength>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxBOTTOM</flag>
+                                                <border>5</border>
+                                                <option>1</option>
+                                                <object class="wxTextCtrl" name="iva">
+                                                    <enabled>0</enabled>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxFrame" name="frame">
+        <style>wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX</style>
+        <size>850,400</size>
+        <title>wxFrame frame</title>
+        <centered>1</centered>
+        <object class="wxPanel" name="panel">
+            <style>wxSTATIC_BORDER|wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <option>1</option>
+                    <object class="wxFlexGridSizer">
+                        <cols>2</cols>
+                        <rows>0</rows>
+                        <vgap>0</vgap>
+                        <hgap>0</hgap>
+                        <growablecols>1</growablecols>
+                        <growablerows>6,7</growablerows>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Codice:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="id" subclass="myxrc.UpperTextCtrl">
+                                        <size>70,-1</size>
+                                        <enabled>0</enabled>
+                                        <maxlength>6</maxlength>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Data:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="data" subclass="myxrc.DateTextCtrl">
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxBitmapButton" name="btn_data" subclass="myxrc.CalendarButton">
+                                        <style>wxBU_AUTODRAW</style>
+                                        <bitmap>calcola.png</bitmap>
+                                    </object>
+                                </object>
+                                <object class="spacer">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                    <border>5</border>
+                                    <size>5,5</size>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxStaticText" name="wxID_STATIC">
+                                        <label>Data ritorno:</label>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="dataritorno" subclass="myxrc.DateTextCtrl">
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxBitmapButton" name="btn_dataritorno" subclass="myxrc.CalendarButton">
+                                        <style>wxBU_AUTODRAW</style>
+                                        <bitmap>calcola.png</bitmap>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Numero</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="numero" subclass="myxrc.TextCtrl">
+                                <size>70,-1</size>
+                                <enabled>0</enabled>
+                                <maxlength>3</maxlength>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxButton" name="btn_idcommittente" subclass="myxrc.FrameButton">
+                                        <size>100,-1</size>
+                                        <label>Committente</label>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxBitmapButton" name="lkp_idcommittente" subclass="myxrc.LookupButton">
+                                        <style>wxBU_AUTODRAW</style>
+                                        <bitmap>find.xpm</bitmap>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="idcommittente" subclass="myxrc.LookupTextCtrl">
+                                        <size>50,-1</size>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxTextCtrl" name="committente" subclass="myxrc.TextCtrl">
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxButton" name="btn_idautista1" subclass="myxrc.FrameButton">
+                                        <size>100,-1</size>
+                                        <label>Autista 1</label>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxBitmapButton" name="lkp_idautista1" subclass="myxrc.LookupButton">
+                                        <style>wxBU_AUTODRAW</style>
+                                        <bitmap>find.xpm</bitmap>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="idautista1" subclass="myxrc.LookupTextCtrl">
+                                        <size>50,-1</size>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxTextCtrl" name="autista1" subclass="myxrc.TextCtrl">
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxButton" name="btn_idautista2" subclass="myxrc.FrameButton">
+                                        <size>100,-1</size>
+                                        <label>Autista 2</label>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxBitmapButton" name="lkp_idautista2" subclass="myxrc.LookupButton">
+                                        <style>wxBU_AUTODRAW</style>
+                                        <bitmap>find.xpm</bitmap>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="idautista2" subclass="myxrc.LookupTextCtrl">
+                                        <size>50,-1</size>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxTextCtrl" name="autista2" subclass="myxrc.TextCtrl">
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxButton" name="btn_idveicolo" subclass="myxrc.FrameButton">
+                                        <size>100,-1</size>
+                                        <label>Veicolo</label>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxBitmapButton" name="lkp_idveicolo" subclass="myxrc.LookupButton">
+                                        <style>wxBU_AUTODRAW</style>
+                                        <bitmap>find.xpm</bitmap>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>0</border>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <object class="wxTextCtrl" name="idveicolo" subclass="myxrc.LookupTextCtrl">
+                                        <size>50,-1</size>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxTextCtrl" name="veicolo" subclass="myxrc.TextCtrl">
+                                        <tooltip>Veicolo</tooltip>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxTextCtrl" name="targa" subclass="myxrc.TextCtrl">
+                                        <tooltip>Targa</tooltip>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_TOP|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Ora e luogo di carico:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="oraeluogo" subclass="myxrc.TextCtrl">
+                                <style>wxTE_MULTILINE</style>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxALIGN_LEFT|wxALIGN_TOP|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="wxID_STATIC">
+                                <label>Destinazione-Itinerario:</label>
+                            </object>
+                        </object>
+                        <object class="sizeritem">
+                            <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                            <border>5</border>
+                            <object class="wxTextCtrl" name="destinazione" subclass="myxrc.TextCtrl">
+                                <style>wxTE_MULTILINE</style>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

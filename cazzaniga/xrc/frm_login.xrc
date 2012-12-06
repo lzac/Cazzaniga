@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxDialog" name="Login">
+        <style>wxCAPTION|wxSYSTEM_MENU|wxCLOSE_BOX|wxTAB_TRAVERSAL</style>
+        <exstyle>wxWS_EX_BLOCK_EVENTS</exstyle>
+        <bg>#E7F5FE</bg>
+        <size>400,190</size>
+        <title>Login</title>
+        <centered>1</centered>
+        <object class="wxBoxSizer">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+                <flag>wxGROW|wxALL</flag>
+                <border>5</border>
+                <object class="wxBoxSizer">
+                    <orient>wxVERTICAL</orient>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_LEFT|wxRIGHT|wxTOP|wxBOTTOM</flag>
+                        <border>5</border>
+                        <object class="wxStaticText" name="wxID_STATIC">
+                            <label>   Immetti le tue credenziali per accedere al programma:</label>
+                        </object>
+                    </object>
+                </object>
+            </object>
+            <object class="sizeritem">
+                <flag>wxGROW|wxLEFT|wxRIGHT|wxTOP</flag>
+                <border>5</border>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxGROW|wxALL</flag>
+                        <border>5</border>
+                        <object class="wxStaticBitmap" name="immagine">
+                            <size>64,64</size>
+                            <bitmap>Login Manager.png</bitmap>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxGROW|wxLEFT|wxRIGHT</flag>
+                        <border>8</border>
+                        <option>1</option>
+                        <object class="wxFlexGridSizer">
+                            <cols>2</cols>
+                            <rows>4</rows>
+                            <vgap>0</vgap>
+                            <hgap>0</hgap>
+                            <growablecols>1</growablecols>
+                            <object class="sizeritem">
+                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                <border>8</border>
+                                <object class="wxStaticText" name="wxID_STATIC">
+                                    <label>Username:</label>
+                                </object>
+                            </object>
+                            <object class="sizeritem">
+                                <flag>wxGROW|wxGROW|wxALL</flag>
+                                <border>8</border>
+                                <object class="wxTextCtrl" name="user" subclass="myxrc.TextCtrl">
+                                    <maxlength>50</maxlength>
+                                </object>
+                            </object>
+                            <object class="sizeritem">
+                                <flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                <border>8</border>
+                                <object class="wxStaticText" name="wxID_STATIC">
+                                    <label>Password:</label>
+                                </object>
+                            </object>
+                            <object class="sizeritem">
+                                <flag>wxGROW|wxGROW|wxALL</flag>
+                                <border>8</border>
+                                <object class="wxTextCtrl" name="password" subclass="myxrc.PwdTextCtrl">
+                                    <style>wxTE_PASSWORD</style>
+                                    <maxlength>50</maxlength>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxLEFT|wxRIGHT|wxBOTTOM</flag>
+                <border>8</border>
+                <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>14,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                        <border>5</border>
+                        <size>5,5</size>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_BOTTOM|wxLEFT|wxTOP|wxBOTTOM</flag>
+                        <border>8</border>
+                        <object class="wxButton" name="cancel">
+                            <size>100,-1</size>
+                            <label>Cancel</label>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_BOTTOM|wxALL</flag>
+                        <border>8</border>
+                        <object class="wxButton" name="ok">
+                            <size>100,-1</size>
+                            <label>OK</label>
+                            <default>1</default>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

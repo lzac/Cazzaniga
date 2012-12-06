@@ -1,0 +1,3 @@
+Copiare file solitamente in Windows/system
+
+regsvr32 Reportman.ocx

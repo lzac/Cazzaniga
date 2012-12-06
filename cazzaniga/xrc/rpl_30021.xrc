@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxPanel" name="panel">
+        <object class="wxFlexGridSizer">
+            <cols>11</cols>
+            <rows>0</rows>
+            <vgap>0</vgap>
+            <hgap>0</hgap>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="wxID_STATIC">
+                    <font>
+                        <size>10</size>
+                        <family>swiss</family>
+                        <style>italic</style>
+                        <weight>bold</weight>
+                        <face>Tahoma</face>
+                    </font>
+                    <label>Numero elementi:</label>
+                </object>
+            </object>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                <border>5</border>
+                <object class="wxTextCtrl" name="count" subclass="myxrc.TextCtrl">
+                    <size>120,-1</size>
+                    <style>wxTE_RIGHT</style>
+                    <enabled>0</enabled>
+                </object>
+            </object>
+            <object class="spacer">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                <border>5</border>
+                <size>5,5</size>
+            </object>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="wxID_STATIC">
+                    <font>
+                        <size>10</size>
+                        <family>swiss</family>
+                        <style>italic</style>
+                        <weight>bold</weight>
+                        <face>Tahoma</face>
+                    </font>
+                    <label>Totale importo:</label>
+                </object>
+            </object>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                <border>5</border>
+                <object class="wxTextCtrl" name="importo" subclass="myxrc.TextCtrl">
+                    <size>120,-1</size>
+                    <style>wxTE_RIGHT</style>
+                    <enabled>0</enabled>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>
