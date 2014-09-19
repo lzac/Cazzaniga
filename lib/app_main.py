@@ -421,8 +421,7 @@ class MainFrame(wx.Frame):
         if event.Id == g.menu.OFFERTA:
             filtro['data'] = {'segno':'>', 'value':data}
         if event.Id == g.menu.FATTURA:
-            filtro['data'] = {'segno':'>', 'value':data}            
-            
+            filtro['data'] = {'segno':'>', 'value':data}                                                        
         if len(filtro) > 0:
             kwargs['filtro'] = filtro
         if len(idpk2):

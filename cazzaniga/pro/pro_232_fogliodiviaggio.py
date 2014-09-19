@@ -5,6 +5,7 @@ import lib_global as g
 import lib_function as F
 import win32com.client
 import lib_file as File
+import datetime
 
 class ListPanel(lib.panel.ListPanel):
     def __init__(self, *args, **kwargs):
@@ -16,7 +17,11 @@ class ListPanel(lib.panel.ListPanel):
         meta = MetaData()
         meta.bind = lib.g.engine
         t = Table('fogliodiviaggio', meta, autoload=True)
-        s = select([t.c.id, t.c.numero, t.c.data, t.c.committente]).order_by(t.c.id)
+        s = select([t.c.id, t.c.numero, t.c.data, t.c.committente]).order_by(t.c.id)        
+        data = str(datetime.date.today())
+        data = data[:4]+'0101'      
+        print data      
+        s = s.where(t.c.data>=data)
         rs = s.execute()
         self.fill_data(rs, [_('Id'),  _('Numero'), _('Data'), _('Committente')])
 
